@@ -28,7 +28,7 @@ public class Booking {
 	cot=br.readLine();
 	System.out.println("Do you want cable connection ?(please  enter:(cable/nocable)");
 	cableConnection = br.readLine();
-	System.out.println("Do you want wifi connection ?(please  enter:(wifi/no wifi)");
+	System.out.println("Do you want Wifi connection ?(please  enter:(wifi/no wifi)");
 	wifi=br.readLine();
 	System.out.println("Do you want any laundry services ?(please  enter:(Laundry/no Laundry)");
 	Laundry=br.readLine();	

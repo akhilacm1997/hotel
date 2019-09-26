@@ -75,7 +75,7 @@ public class Main {
 		case "2":
 		{
 			System.out.println(" Welcome to booking ");	
-			 System.out.println("Did you register first?(y/n)");
+			 System.out.println("Did you register before?(y/n)");
 			  String s =br.readLine();
 			  if(s.contentEquals("y"))
 			  {
