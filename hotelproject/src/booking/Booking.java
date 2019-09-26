@@ -1,5 +1,10 @@
 package booking;
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+
 import customerpakage.Customer;
+import hotelproject.Main;
 
 public class Booking {
 	String ac;
@@ -7,11 +12,27 @@ public class Booking {
 	String cableConnection;
 	String wifi ;
 	String Laundry;
-	static int cost=0;
+	
+	int nosPersons,nosDays;
 	
 	Customer cm = new Customer();
-	public void booking1(String ac,String cot,String cableConnection,String wifi,String Laundry)
-	{
+	BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+	Doubleroombooking db = new Doubleroombooking();
+	public void booking1() throws IOException
+			
+	{  int cost=0;
+	System.out.println("please choose your service required"); 
+    System.out.println("Do you want ac room(please  enter:(ac/nac)");
+    ac = br.readLine();
+    System.out.println("Do you want single or double cot room (please  enter:(single/double)");
+	cot=br.readLine();
+	System.out.println("Do you want cable connection ?(please  enter:(cable/nocable)");
+	cableConnection = br.readLine();
+	System.out.println("Do you want wifi connection ?(please  enter:(wifi/no wifi)");
+	wifi=br.readLine();
+	System.out.println("Do you want any laundry services ?(please  enter:(Laundry/no Laundry)");
+	Laundry=br.readLine();	
+	    cm.customerbooking(ac, cot, cableConnection, wifi, Laundry);
 		cm.setAc(ac);
 		cm.setCot(cot);
 		cm.setCableConnection(cableConnection);
@@ -19,12 +40,14 @@ public class Booking {
 		cm.setLaundry(Laundry);
 		if(ac.equals("ac"))
 		{
-	cost=cost+1000;
+			
+			cost=cost+db.acbooking();
 	
 		}
 		else
 		{
-	cost=cost+750;
+			cost=cost+db.nACbooking();
+			
 		}
 		if(cot.equalsIgnoreCase("double"))
 		{

@@ -1,21 +1,21 @@
 package customerpakage;
 
 public class Customer {
-	String name;
-	String address;
-	String contactNumber;
-	String email;
-	String proofType;
-	String proofID;
-	String i;
-	String num1;
-	String ac;
-	String cot;
-	String cableConnection;
-	String wifi ;
-	String Laundry;
+    private String name;
+	private String address;
+	private String contactNumber;
+	private String email;
+	private String proofType;
+	private String proofID;
+	private String i;
+	private String num1;
+	private String ac;
+	private String cot;
+	private String cableConnection;
+	private String wifi ;
+	private String Laundry;
 	
-	public void customer1(String name2, String address2, String contactNumber2, String email2, String proofType2, String proofID2)
+	//public void customer1(String name2, String address2, String contactNumber2, String email2, String proofType2, String proofID2)
 	{
 		
 	}
